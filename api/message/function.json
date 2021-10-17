@@ -19,8 +19,6 @@
       "name": "printers",
       "type": "table",
       "tableName": "tblPrinters",
-      "partitionKey": "PRINTER",
-      "rowKey": "PRINTERALB2848",
       "connection": "DATABASE_CONNECTION_STRING",
       "direction": "in"
     }

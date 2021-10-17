@@ -1,5 +1,5 @@
-module.exports = async function (context, req) {
-    context.res.json({
-        text: "Hello from the API"
-    });
+module.exports = function (context, printers) {
+    context.log('Node.js tablelookup', printers);
+    context.log('Printer IP: ' + context.bindings.printers.IP);
+    context.done();
 };

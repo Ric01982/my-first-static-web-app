@@ -1,5 +1,6 @@
-module.exports = function (context, printers) {
-    context.log('Node.js tablelookup', printers);
-    context.log('Printer IP: ' + context.bindings.printers.IP);
+module.exports = function (context, myQueueItem) {
+    context.log('Node.js tablelookup', myQueueItem);
+    context.log('Printer IP: ' + context.bindings.printers.Name);
     context.done();
 };
+

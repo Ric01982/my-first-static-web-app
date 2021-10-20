@@ -10,7 +10,7 @@
     {
       "name": "printers",
       "type": "table",
-      "tableName": "Person",
+      "tableName": "tblPrinters",
       "partitionKey": "Printer",
       "rowKey": "{queueTrigger}",
       "connection": "DATABASE_CONNECTION_STRING",

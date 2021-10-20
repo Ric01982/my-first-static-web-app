@@ -1,26 +1,21 @@
 {
   "bindings": [
     {
-      "authLevel": "anonymous",
-      "type": "httpTrigger",
-      "direction": "in",
-      "name": "req",
-      "methods": [
-        "get",
-        "post"
-      ]
-    },
-    {
-      "type": "http",
-      "direction": "out",
-      "name": "res"
+      "queueName": "myqueue-items",
+      "connection": "DATABASE_CONNECTION_STRING",
+      "name": "myQueueItem",
+      "type": "queueTrigger",
+      "direction": "in"
     },
     {
       "name": "printers",
       "type": "table",
-      "tableName": "tblPrinters",
+      "tableName": "Person",
+      "partitionKey": "Printer",
+      "rowKey": "{queueTrigger}",
       "connection": "DATABASE_CONNECTION_STRING",
       "direction": "in"
     }
-  ]
+  ],
+  "disabled": false
 }

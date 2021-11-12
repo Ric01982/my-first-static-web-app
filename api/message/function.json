@@ -4,7 +4,7 @@
       "queueName": "myqueue-items",
       "connection": "DATABASE_CONNECTION_STRING",
       "name": "myQueueItem",
-      "type": "queueTrigger",
+      "type": "httpTrigger",
       "direction": "in"
     },
     {
@@ -12,7 +12,7 @@
       "type": "table",
       "tableName": "tblPrinters",
       "partitionKey": "Printer",
-      "rowKey": "{queueTrigger}",
+      "rowKey": "{httpTrigger}",
       "connection": "DATABASE_CONNECTION_STRING",
       "direction": "in"
     }

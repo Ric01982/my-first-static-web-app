@@ -11,7 +11,7 @@ html, body {
 
 main {
   margin: auto;
-  width: 50%;
+  width: auto;
   padding: 20px;
 }
 
@@ -19,3 +19,4 @@ main > h1 {
   text-align: center;
   font-size: 3.5em;
 }
+
